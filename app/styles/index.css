@@ -45,6 +45,20 @@ pre code {
   opacity: 0;
 }
 
+.publickey-form {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.publickey-form input {
+  font-family: monospace;
+  color: #888888;
+}
+
+.publickey-form input:focus {
+  color: #333333;
+}
+
 .subscription-details {
   transition: opacity 1s;
 }

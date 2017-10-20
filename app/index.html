@@ -8,20 +8,26 @@
   <title>Push Codelab</title>
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.indigo-pink.min.css">
-  <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
   <link rel="stylesheet" href="styles/index.css">
 </head>
 
 <body>
 
   <header>
-    <h1>Push Codelab</h1>
+    <h1>Push Codelab (complete)</h1>
   </header>
 
   <main>
     <p>Welcome to the push messaging codelab. The button below needs to be
     fixed to support subscribing to push.</p>
+    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label publickey-form">
+      <input class="mdl-textfield__input js-publickey-input" type="text" pattern="[A-Za-z0-9_-]{87}" maxlength="87">
+      <label class="mdl-textfield__label" for="sample1">Public Key</label>
+      <span class="mdl-textfield__error">Not valid, please visit <a href="https://web-push-codelab.glitch.me/">Push Companion
+      Site</a> to get a key.</span>
+    </div>
     <p>
       <button disabled class="js-push-btn mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
         Enable Push Messaging
@@ -32,7 +38,7 @@
       server to store in a database so that when you want to send a message
       you can lookup the subscription and send a message to it.</p>
       <p>To simplify things for this code lab copy the following details
-      into the <a href="https://web-push-codelab.glitch.me//">Push Companion
+      into the <a href="https://web-push-codelab.glitch.me/">Push Companion
       Site</a> and it'll send a push message for you, using the application
       server keys on the site - so make sure they match.</p>
       <pre><code class="js-subscription-json"></code></pre>
